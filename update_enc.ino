@@ -98,6 +98,7 @@ void me(char i)
                 if (millis() >= nextConnectTime)
                 {
                     Serial.println("Timeout waiting for server response");
+                    void(* resetFunc) (void) = 0;
                 }
             }
 

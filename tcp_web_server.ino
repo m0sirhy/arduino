@@ -160,7 +160,7 @@ Serial.println("2");
             digitalWrite(RELAY_1, HIGH); //  Turn Switch on relay - on forn unit 1
 
             gotAMessage = false;
-           
+           command = '\0';
 
             break;
         case '2':
@@ -177,6 +177,7 @@ Serial.println("2");
            
 
             gotAMessage = false;
+              command = '\0';
             break;
         case '3':
             digitalWrite(RELAY_3, LOW); // Turn Switch off relay - on forn unit 1
@@ -187,7 +188,7 @@ Serial.println("2");
 
             gotAMessage = false;
           
-
+command = '\0';
             break;
         case '4':
             digitalWrite(RELAY_4, LOW); // Turn Switch off relay - on forn unit 1
@@ -198,9 +199,10 @@ Serial.println("2");
 
             gotAMessage = false;
           
-
+command = '\0';
             break;
        default: 
+              command = '\0';
                    gotAMessage = false;
 break;
        
